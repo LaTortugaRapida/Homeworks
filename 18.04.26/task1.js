@@ -16,10 +16,10 @@ let myRange = {
         return  {
             next() {
                 if(move === 1 && current > to) {
-                    return { done: true };
+                    return {value: undefined, done: true };
                 }
                 if(move === -1 && current < to) { 
-                    return { done: true };
+                    return {value: undefined, done: true };
                 }
                 
                 let val = current;
